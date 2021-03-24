@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Roboto" sans-serif;
+  src: url("./Roboto/Roboto-Medium.ttf");
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto";
+}
+
+/* HERO BANNER */
+.hero-banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-banner img {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: block;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.hero-title {
+  z-index: 2;
+  width: 70%;
+}
+
+.hero-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  margin-top: 50vh;
+  margin-right: 10vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.logo-bfm {
+  z-index: 2;
+  width: 140px;
+}
+
+.logo-1 {
+  width: 20vh;
+  height: 20vh;
+}
+
+.logo-2 {
+  width: 6vh;
+  height: 6vh;
+}
+
+.info-icon {
+  z-index: 2;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 37vh;
+  height: auto;
+}
+
+.main-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-button span {
+  padding-left: 50px;
+}
+
+.icon-arrow {
+  width: 50px;
+}
+
+/* ARTICLE 1 */
+.article-1 {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 7vh;
+}
+
+.pole-gurk-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-1 h1 {
+  color: white;
+  padding-bottom: 5vh;
+}
+
+.article-1 img {
+  width: 100%;
+}
+
+/* A vivre sans limite */
+.movie-list-container {
+  margin-top: 10vh;
+  width: 100%;
+  height: 40vh;
+}
+
+.movie-list-container h1 {
+  margin-left: 10vh;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[4];
+      grid-template-columns: repeat(4, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+
+.wrapper section .item {
+  padding: 0 2px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.wrapper section .item:hover {
+  margin: 0 40px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
+}
+
+.movie-list-container img {
+  width: 30vh;
+  padding-left: 3vh;
+  position: relative;
+}
+
+.movie-list-container h1 {
+  color: white;
+  padding-bottom: 3vh;
+}
+
+.otherlist {
+  margin-top: 25vh;
+}
+
+.lastlist {
+  margin-bottom: 30vh;
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.item:hover:before {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transform: translateX(21px);
+          transform: translateX(21px);
+  opacity: 0;
+}
+
+.item:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item h1 {
+  margin: 0px;
+}
+
+.item p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.item button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.item button:hover {
+  background: dodgerblue;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
